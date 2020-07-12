@@ -1,8 +1,8 @@
-function sender_demo(resetOld, repeatCount,t_end,f_1,f_2,active_channel)
+function sender_demo(resetOld, repeatCount,t_end,f_1,bandwidth,f_2,active_channel)
   
     
   
-    
+    warning off;
     genericFileNameCommand = 'genericAttack_command_temp.wav';
     genericFileNameBackdoor = 'genericAttack_backdoor_temp.wav';
     if(resetOld == 1)
@@ -13,7 +13,8 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,f_2,active_channel)
     %% Generate Chirp signal and normalize
    % y=tts(inCommand,'Microsoft Zira Desktop - English (United States)',0,48000);
    t = 0:1/48000:t_end;
-    y = chirp(t,f_1,t_end,f_1); 
+    %y = chirp(t,f_1,t_end,f_1); % For tone test
+    y = chirp(t, f_1, t_end, f_1-bandwidth);    % For chirp test
     %y = [downchirp,y];
     y2 = chirp(t,f_2,t_end,f_2);
     y = y./max(y);
@@ -63,6 +64,10 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,f_2,active_channel)
         y2 = upConvData2(:);%+ secCarr(:);
         y1 = y1./max(abs(y1));
         y2 = y2./max(abs(y2));
+        bpFilt = designfilt('bandpassfir','FilterOrder',30, ...
+         'CutoffFrequency1',40000-f_1-500,'CutoffFrequency2',40000-f_1+bandwidth+500, ...
+         'SampleRate',fs);
+        y1 = filter(bpFilt, y1);
         if(active_channel == 1)
             y = [y1, zeros(length(y1),1)];
         elseif(active_channel == 2)
@@ -89,8 +94,8 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,f_2,active_channel)
         y = repmat(y, repeatCount, 1);
     end
     timeOfPlay = size(y,1)/fs;
-    figure; spectrogram(y(:,1), 1024, 512, fs, fs);
-    figure; spectrogram(y(:,2), 1024, 512, fs, fs);
+    %figure; spectrogram(y(:,1), 1024, 512, fs, fs);
+    %figure; spectrogram(y(:,2), 1024, 512, fs, fs);
     sound(y, fs);
     disp('Playing BackDoor sound...');
     pause(timeOfPlay+1);

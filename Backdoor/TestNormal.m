@@ -3,11 +3,19 @@ recObj = audiorecorder(48000, 24, 1);
 disp('Start Recording');
 record(recObj);
 disp('Playing Backdoor signal');
-sender_demo(1, 1, 0.5, 0, 0, 0);
+sampleRate = 96000;
+t = 0:1/96000:0.5;
+sfreq = 1000;
+efreq = 8000;
+sig = chirp(t, sfreq, 0.5, efreq);
+sound(sig, 96000);
+pause(2);
 disp('Stop Recording');
 stop(recObj);
 
 data = getaudiodata(recObj);
+figure; spectrogram(sig, 1024, 512, 96000, 96000);
 figure; plot((1:length(data))/recObj.SampleRate, data);
 figure; spectrogram(data, 1024, 512, 48000, 48000);
-
+cc = xcorr(data, sig);
+figure; plot(cc);
