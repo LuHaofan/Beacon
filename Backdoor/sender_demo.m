@@ -12,9 +12,13 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,bandwidth,f_2,active_channe
     end
     %% Generate Chirp signal and normalize
    % y=tts(inCommand,'Microsoft Zira Desktop - English (United States)',0,48000);
-   t = 0:1/48000:t_end;
-    %y = chirp(t,f_1,t_end,f_1); % For tone test
-    y = chirp(t, f_1, t_end, f_1-bandwidth);    % For chirp test
+   %t_end = 0.2;
+    t = 0:1/48000:t_end;
+    y = chirp(t, f_1, t_end, f_1-bandwidth);
+%     t_half = 0:1/48000:t_end/2;
+%     y_tmp1 = chirp(t_half, f_1, t_end/2, f_1-bandwidth);    % For chirp test
+%     y_tmp2 = chirp(t_half, f_1-bandwidth, t_end/2, f_1);
+%     y = cat(2, y_tmp1(1:length(y_tmp1)-1), y_tmp2);
     %y = [downchirp,y];
     y2 = chirp(t,f_2,t_end,f_2);
     y = y./max(y);
@@ -94,7 +98,7 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,bandwidth,f_2,active_channe
         y = repmat(y, repeatCount, 1);
     end
     timeOfPlay = size(y,1)/fs;
-    %figure; spectrogram(y(:,1), 1024, 512, fs, fs);
+    figure; spectrogram(y(:,1), 1024, 512, fs, fs);
     %figure; spectrogram(y(:,2), 1024, 512, fs, fs);
     sound(y, fs);
     disp('Playing BackDoor sound...');

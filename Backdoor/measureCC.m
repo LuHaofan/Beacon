@@ -1,4 +1,4 @@
-function cc = measureCC(duration,f_start,bandwidth,f_2, active_channel)
+function cc = measureCC(duration,f_start,bandwidth,f_2, active_channel, filt)
 if f_start+bandwidth > 40000
     cc = nan;
     return;
@@ -20,9 +20,15 @@ disp('Stop Recording');
 stop(recObj);
 
 data = getaudiodata(recObj);
-%figure; plot((1:length(data))/recObj.SampleRate, data);
-%figure; spectrogram(data, 1024, 512, 48000, 48000);
-% Configure the expected signal from cross-correlation
+%% Filter the data
+if (filt)
+    bpFilt2 = designfilt('bandpassfir','FilterOrder',30, ...
+         'CutoffFrequency1', 1000,'CutoffFrequency2',8000, ...
+         'SampleRate',48000);
+    data = filter(bpFilt2, data);
+end
+figure; spectrogram(data, 1024, 512, 48000, 48000);
+%% Configure the expected signal from cross-correlation
 if f_start+bandwidth > 24000
     if f_start > 24000 && bandwidth == 0
         t = 0:1/48000:duration;
@@ -44,5 +50,5 @@ end
 
 %figure; spectrogram(signal, 1024, 512, 48000, 48000);
 cc = xcorr(data,signal);
-%figure; plot(cc)
+figure; plot(cc);
 end

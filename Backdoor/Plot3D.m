@@ -1,7 +1,7 @@
 function Plot3D(fname,duration, scalelog)
     close all;
     keyset = {0.1,0.2,0.4,0.6,0.8,1,0.5};
-    valset = {'d2:h57', 'd58:h113', 'd58:h113','d170:h225', 'd226:h281', 'd282:h337', 'd2:h257'};
+    valset = {'d2:h57', 'd58:h113', 'd58:h113','d170:h225', 'd226:h281', 'd282:h337', 'd3:h137'};
     map = containers.Map(keyset, valset);
     data = xlsread(fname, map(duration));
     startFreq=data(:,1);bandwidth=data(:,2);crosscorr=data(:,5);
