@@ -1,0 +1,519 @@
+DEBUG:bleak.backends.dotnet.discovery:0 devices found. Watcher status: 4.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:0 devices found. Watcher status: 4.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:Received 29:1C:2A:23:A9:64: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:9B:A6:27:FF:48: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:9B:A6:27:FF:48: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 26:70:13:48:13:0F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 63:D3:76:52:3F:65: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 29:1C:2A:23:A9:64: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 63:D3:76:52:3F:65: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received EE:4C:63:EC:88:29: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received CE:8C:D2:80:39:EC: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 29:1C:2A:23:A9:64: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F8:53:21:21:01:C3: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:19 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.client:Connecting to BLE device @ 00:04:79:00:0E:E6
+DEBUG:bleak.backends.dotnet.client:Get Services...
+DEBUG:bleak.backends.dotnet.client:Connection successful.
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 00002a00-0000-1000-8000-00805f9b34fb : bytearray(b'eSense-0814')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S!\x02\x01\x1e')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\x0c\x02\x00\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Disconnecting from BLE device...
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 61:AB:91:71:40:83: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 26:70:13:48:13:0F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:9B:A6:27:FF:48: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 29:1C:2A:23:A9:64: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0B:E8: eSense-0048.
+DEBUG:bleak.backends.dotnet.discovery:Received 63:D3:76:52:3F:65: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 26:70:13:48:13:0F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 63:D3:76:52:3F:65: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6C:7D:EE:51:58:67: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 29:1C:2A:23:A9:64: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D8:3B:F2:21:A0:22: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6C:1E:53:54:3A:93: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:21 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.client:Connecting to BLE device @ 00:04:79:00:0E:E6
+DEBUG:bleak.backends.dotnet.client:Get Services...
+DEBUG:bleak.backends.dotnet.client:Connection successful.
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 00002a00-0000-1000-8000-00805f9b34fb : bytearray(b'eSense-0814')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\x0c\x02\x00\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Disconnecting from BLE device...
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:9B:A6:27:FF:48: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 63:D3:76:52:3F:65: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received EF:CD:C0:68:67:E7: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6C:1E:53:54:3A:93: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 63:D3:76:52:3F:65: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:9B:A6:27:FF:48: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:18 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.client:Connecting to BLE device @ 00:04:79:00:0E:E6
+DEBUG:bleak.backends.dotnet.client:Get Services...
+DEBUG:bleak.backends.dotnet.client:Connection successful.
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 00002a00-0000-1000-8000-00805f9b34fb : bytearray(b'eSense-0814')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\x0c\x02\x00\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Disconnecting from BLE device...
+DEBUG:bleak.backends.dotnet.discovery:Received FF:69:C8:49:54:68: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:9B:A6:27:FF:48: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F0:4E:65:EE:8A:2B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 54:7E:48:31:93:09: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 2A:C0:EB:37:33:88: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:EE:B3:C5:72:B1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F8:53:21:21:01:C3: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D4:A1:AA:48:EC:EF: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F0:4E:65:EE:8A:2B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F0:4E:65:EE:8A:2B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:9B:A6:27:FF:48: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6C:1E:53:54:3A:93: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:24 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C6:94:E7:B9:80:AA: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F0:4E:65:EE:8A:2B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C7:F1:19:CF:DD:C9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DF:B4:C3:FA:05:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received CE:5A:C6:A8:C0:B4: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7B:0E:CF:C0:52:DE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 54:7E:48:31:93:09: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FD:3A:EC:FF:8D:41: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0B:E8: eSense-0048.
+DEBUG:bleak.backends.dotnet.discovery:Received F5:3B:C9:44:AB:F0: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C6:94:E7:B9:80:AA: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 4E:65:7B:C8:1F:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:27 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F5:C3:03:A1:D7:33: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 54:7E:48:31:93:09: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C3:6D:CC:4D:58:6C: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1A:E4:7D:1A:08:95: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0B:E8: eSense-0048.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received EE:5E:72:D2:BF:77: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:22 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 4E:65:7B:C8:1F:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:56:55:6F:05:8C: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received D8:3B:F2:21:A0:22: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C9:F3:1B:D1:DF:CB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 12:78:E4:2A:87:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received CE:5A:C6:A8:C0:B4: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:56:55:6F:05:8C: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FF:69:C8:49:54:68: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D4:A1:AA:48:EC:EF: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:47:77:89:6D:4A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DC:A9:04:74:F8:37: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:2E:1B:2F:39:38: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:28 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.client:Connecting to BLE device @ 00:04:79:00:0E:E6
+DEBUG:bleak.backends.dotnet.client:Get Services...
+DEBUG:bleak.backends.dotnet.client:Connection successful.
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 00002a00-0000-1000-8000-00805f9b34fb : bytearray(b'eSense-0814')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\x0c\x02\x00\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Disconnecting from BLE device...
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C4:29:9C:23:23:E5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F7:C5:05:A3:D9:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received FF:6E:BF:D1:BC:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:40:88:F2:72:89: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F0:4E:65:EE:8A:2B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received C4:29:9C:23:23:E5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 65:D0:AA:6C:FA:EF: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 25:E8:9F:4D:D5:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:23 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.client:Connecting to BLE device @ 00:04:79:00:0E:E6
+DEBUG:bleak.backends.dotnet.client:Get Services...
+DEBUG:bleak.backends.dotnet.client:Connection successful.
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 00002a00-0000-1000-8000-00805f9b34fb : bytearray(b'eSense-0814')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\x0c\x02\x00\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Disconnecting from BLE device...
+DEBUG:bleak.backends.dotnet.discovery:Received 10:CE:61:24:31:A6: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received A4:D1:8C:70:D1:ED: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 2A:2A:08:97:44:CC: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 67:EB:69:2B:0A:C7: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D3:5E:C7:54:6F:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received CE:5A:C6:A8:C0:B4: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D5:60:C9:56:71:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 5C:49:7D:70:CE:F9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F2:24:73:5D:1B:F4: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 4A:8F:FC:06:E5:35: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6C:1E:53:54:3A:93: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 2A:2A:08:97:44:CC: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DD:39:A0:29:14:9A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F0:4E:65:EE:8A:2B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 10:CE:61:24:31:A6: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received CE:8C:D2:80:39:EC: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 5C:49:7D:70:CE:F9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:29 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 4E:65:7B:C8:1F:99: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 47:D6:A6:42:54:9F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6E:09:4C:5A:78:51: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 41:EA:C9:41:83:36: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 00:04:79:00:0E:E6: eSense-0814.
+DEBUG:bleak.backends.dotnet.discovery:Received 2A:2A:08:97:44:CC: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 7D:AA:A3:4E:52:E8: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F0:4E:65:EE:8A:2B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received EE:4C:63:EC:88:29: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FA:55:23:23:03:C5: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D5:61:79:F3:B8:7B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D5:61:79:F3:B8:7B: estimote.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 6C:1E:53:54:3A:93: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C1:6B:CA:4B:56:6A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received D6:A3:AC:4A:EE:F1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received CE:8C:D2:80:39:EC: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:5E:F9:A9:F2:C1: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 17:86:2E:B4:D0:BE: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F3:30:1D:31:3B:3A: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F1:CF:C2:6A:69:E9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received C9:F3:1B:D1:DF:CB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received DA:3D:F4:23:A2:24: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received FD:3A:EC:FF:8D:41: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 46:1D:47:57:35:20: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received F0:4E:65:EE:8A:2B: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 10:CE:61:24:31:A6: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 32:B0:60:CB:14:B9: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 27:A6:89:BE:A5:9E: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received AC:BC:32:71:E7:BB: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 09:7B:B8:71:EE:6F: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Received 1D:40:88:F2:72:89: Unknown.
+DEBUG:bleak.backends.dotnet.discovery:Could not remove event handlers: unknown event handler...
+DEBUG:bleak.backends.dotnet.discovery:29 devices found. Watcher status: 3.
+DEBUG:bleak.backends.dotnet.client:Connecting to BLE device @ 00:04:79:00:0E:E6
+DEBUG:bleak.backends.dotnet.client:Get Services...
+DEBUG:bleak.backends.dotnet.client:Connection successful.
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 00002a00-0000-1000-8000-00805f9b34fb : bytearray(b'eSense-0814')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\x0c\x02\x00\n')
+DEBUG:bleak.backends.dotnet.client:Write Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Read Characteristic 0000ff07-0000-1000-8000-00805f9b34fb : bytearray(b'S\r\x02\x01\n')
+DEBUG:bleak.backends.dotnet.client:Disconnecting from BLE device...
