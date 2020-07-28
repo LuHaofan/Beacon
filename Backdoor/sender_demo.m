@@ -94,11 +94,12 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,bandwidth,f_2,active_channe
     
     %%%%%%%%%%%%%%% Play BackDoor Signal %%%%%%%%%%%%%%%%%%%%%%
     [y, fs] = audioread(genericFileNameBackdoor);
+    y =  cat(1, y, zeros(0.1*fs,2));
     if(repeatCount>1)
         y = repmat(y, repeatCount, 1);
     end
     timeOfPlay = size(y,1)/fs;
-    figure; spectrogram(y(:,1), 1024, 512, fs, fs);
+    %figure; spectrogram(y(:,1), 1024, 512, fs, fs);
     %figure; spectrogram(y(:,2), 1024, 512, fs, fs);
     sound(y, fs);
     disp('Playing BackDoor sound...');
