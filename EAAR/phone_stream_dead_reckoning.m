@@ -7,14 +7,14 @@ figure(2);
 ButtonHandle_2 = uicontrol('Style', 'PushButton', ...
     'String', 'Calibrate','Callback','delete(gcf)');
 
-anchor_list = [0, 0; -3,4];       % physical beacon position
-calib_pt_list = [0, 6];         % recalibration point
+anchor_list = [-3,4];
+calib_pt_list = [0,6];
 
 t=tcpip('127.0.0.1', 10086,'NetworkRole','server');
 
 % Wait for connection
 disp('Waiting for connection');
-%fopen(t);
+fopen(t);
 disp('Connection OK');
 
 
@@ -48,7 +48,7 @@ cal_time_list = [];
 time_stamp_step = 1;
 
 turn_angle_list = [];
-connector on 990707;
+connector on synrg;
 m=mobiledev;
 discardlogs(m);
 pause(0.5);
@@ -57,7 +57,7 @@ pause(0.5);
 step_count = 0;
 step_length = [];
 %% Multiple list for diff. Cal.
-curser_list = []; % soft cal. %每一步的坐标
+curser_list = []; % soft cal.
 curser_list_raw = zeros(10000,2); % no cal.
 quat = [0,0,0,0];
 list = [];
@@ -103,8 +103,8 @@ update_hidden = 1;
 
 while 1
 %    total_time = toc;
-%     disp(accel_l);
-%     disp(gyro_l);
+    disp(accel_l);
+    disp(gyro_l);
     while_time_list = [while_time_list; total_time];
     drawnow;
     if ~ishandle(ButtonHandle)
@@ -138,7 +138,6 @@ while 1
         calib_anchor_id = fread(t, t.BytesAvailable);
         flag_calib = 1;
     end
-    %flag_calib = 1;
     if flag_calib == 1
         %% Modified by Wally
         if calibrated_pt_id<1 % Not pre-set, find the closest cal_point
