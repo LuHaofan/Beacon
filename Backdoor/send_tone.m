@@ -1,11 +1,8 @@
-function sender_demo(resetOld, repeatCount,t_end,f_1,bandwidth,f_2,active_channel,id)
-  
-    
-  
+function send_tone(repeatCount,duration,f_1,f_2,active_channel)
     warning off;
     genericFileNameCommand = 'genericAttack_command_temp.wav';
     genericFileNameBackdoor = 'genericAttack_backdoor_temp.wav';
-    if(resetOld == 1)
+    if(1)
         disp('Info: Deleteing old files.');
         delete(genericFileNameCommand);
         delete(genericFileNameBackdoor);
@@ -13,27 +10,14 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,bandwidth,f_2,active_channe
     %% Generate Chirp signal and normalize
    % y=tts(inCommand,'Microsoft Zira Desktop - English (United States)',0,48000);
    %t_end = 0.2;
-    t = 0:1/48000:t_end;
-%     y = chirp(t, f_1, t_end, f_1-bandwidth);
-    t_half = 0:1/48000:t_end/2;
-    if (id == 0)
-        y_tmp1 = chirp(t_half, f_1, t_end/2, f_1-bandwidth);    % For chirp test
-        y_tmp2 = chirp(t_half, f_1, t_end/2, f_1-bandwidth); 
-    elseif (id == 1)
-        y_tmp1 = chirp(t_half, f_1, t_end/2, f_1-bandwidth);    % For chirp test
-        y_tmp2 = chirp(t_half, f_1-bandwidth, t_end/2, f_1);
-    elseif (id == 2)
-        y_tmp1 = chirp(t_half, f_1-bandwidth, t_end/2, f_1);    % For chirp test
-        y_tmp2 = chirp(t_half, f_1, t_end/2, f_1-bandwidth);
-    else
-        y_tmp1 = chirp(t_half, f_1-bandwidth, t_end/2, f_1);    % For chirp test
-        y_tmp2 = chirp(t_half, f_1-bandwidth, t_end/2, f_1);
-    end
-    y = cat(2, y_tmp1(1:length(y_tmp1)-1), y_tmp2);
-    %y = [downchirp,y];
-    y2 = chirp(t,f_2,t_end,f_2);
+    t = 0:1/48000:duration;
+    y1 = chirp(t, f_1, duration, f_1);
+    y2 = chirp(t, f_2, duration, f_2);
+    y = y1+y2;
+    carr = 40000;
+    y_c = chirp(t,40000-carr,duration,40000-carr);
     y = y./max(y);
-    y2 = y2./max(y2);
+    y_c = y_c./max(y_c);
     
    
     
@@ -59,7 +43,7 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,bandwidth,f_2,active_channe
         secCarr = secCarr ./ max(abs(secCarr));
         
         
-        inSpData = y2;
+        inSpData = y_c;
         spFs = 48000;
         %upConvData = upConversion(inSpData, spFs, fs, carrFreq);
         upConvData2 = upConversion_SSBSC(inSpData, spFs, fs, carrFreq);
@@ -110,8 +94,8 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,bandwidth,f_2,active_channe
         y = repmat(y, repeatCount, 1);
     end
     timeOfPlay = size(y,1)/fs;
-    figure; spectrogram(y(:,1), 1024, 512, fs, fs);
-    figure; spectrogram(y(:,2), 1024, 512, fs, fs);
+    %figure; spectrogram(y(:,1), 1024, 512, fs, fs);
+    %figure; spectrogram(y(:,2), 1024, 512, fs, fs);
     sound(y, fs);
     disp('Playing BackDoor sound...');
     pause(timeOfPlay+1);

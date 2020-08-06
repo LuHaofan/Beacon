@@ -1,6 +1,6 @@
 close all; clear; clc;
-startFreq = 36000;  %The ultrasound frequency after upconversion
-bandwidth = 1000;
+startFreq = 33000;  %The ultrasound frequency after upconversion
+bandwidth = 2000;
 duration = 0.2;
 % recObj = audiorecorder(48000, 24, 1);
 % disp('Start Recording');
@@ -9,7 +9,7 @@ disp('Playing Backdoor signal');
 % Periodically send the backdoor signal
 i = 0;
 while(1)
-    sender_demo(1, 1, duration, 40000-startFreq,bandwidth, 0, 0);
+    sender_demo(1, 100, duration, 40000-startFreq,bandwidth, 0, 0);
     i = i + 1;
 end
 
