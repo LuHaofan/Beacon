@@ -1,4 +1,4 @@
-%sender_demo(1, 1, 0.1, 5000, 0, 0);
+sender_demo(1, 1, 0.1, 5000, 0, 0);
 function sender_demo(resetOld, repeatCount,t_end,f_1,f_2,active_channel)
   
     
@@ -27,7 +27,7 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,f_2,active_channel)
         fs = 96000;
         %fs = 192000;
         nbits = 24;
-        carrFreq = 30000;
+        carrFreq = 40000;
         secCarrFreq = carrFreq;
 
         inSpData = y;
@@ -60,8 +60,8 @@ function sender_demo(resetOld, repeatCount,t_end,f_1,f_2,active_channel)
         %figure; plot(upConvData); hold on; plot(secCarr);
         
         %%%%%%%%%%%for testing combine two channels%%%%%%%%%%%
-        y1 = upConvData(:)+ secCarr(:);
-        y2 = upConvData2(:)+ secCarr(:);
+        y1 = upConvData(:);%+ secCarr(:);
+        y2 = upConvData2(:);%+ secCarr(:);
         y1 = y1./max(abs(y1));
         y2 = y2./max(abs(y2));
         if(active_channel == 1)
