@@ -1,4 +1,4 @@
-function cc = measureCC(duration,f_start,bandwidth,f_2, active_channel, filt)
+function cc = measureCC(duration,f_start,bandwidth,f_2, active_channel, filt, id)
 if f_start+bandwidth > 40000
     cc = nan;
     return;
@@ -8,7 +8,7 @@ disp('Start Recording');
 record(recObj);
 disp('Playing Backdoor signal');
 if f_start+bandwidth > 24000
-    sender_demo(1, 1, duration, 40000-f_start,bandwidth,f_2,active_channel);
+    sender_demo(1, 1, duration, 40000-f_start,bandwidth,f_2,active_channel, 0);
 else
     t = 0:1/96000:duration;
     sig = chirp(t, f_start, duration, f_start+bandwidth);
@@ -29,26 +29,42 @@ if (filt)
 end
 figure; spectrogram(data, 1024, 512, 48000, 48000);
 %% Configure the expected signal from cross-correlation
-if f_start+bandwidth > 24000
-    if f_start > 24000 && bandwidth == 0
-        t = 0:1/48000:duration;
-        signal = chirp(t, 40000-f_start, duration, 40000-f_start);
-    elseif f_start >= 24000 && bandwidth > 0
-        t = 0:1/48000:duration;
-        signal = chirp(t, 40000-f_start, duration, 40000-f_start-bandwidth);
-    elseif f_start < 24000 && bandwidth > 0
-        t2 = 0:1/48000:duration*(f_start+bandwidth-24000)/bandwidth;
-        signal2 = chirp(t2, 40000-24000, duration*(f_start+bandwidth-24000)/bandwidth, 40000-f_start-bandwidth);
-        t1 = 0:1/48000:duration*(24000-f_start)/bandwidth;
-        signal1 = chirp(t1, f_start, duration*(24000-f_start)/bandwidth, 24000);
-        signal = cat(2, signal1, signal2);
-    end 
-else
-    t = 0:1/48000:duration;
-    signal = chirp(t, f_start, duration, f_start+bandwidth);
+t = 0:1/48000:duration/2;
+if (id == 0)
+    y1 = chirp(t, 40000-f_start, duration/2, 40000-f_start-bandwidth);
+    y2 = chirp(t, 40000-f_start, duration/2, 40000-f_start-bandwidth);
+elseif (id == 1)
+    y1 = chirp(t, 40000-f_start, duration/2, 40000-f_start-bandwidth);
+    y2 = chirp(t, 40000-f_start-bandwidth, duration/2, 40000-f_start);
+elseif (id == 2)
+    y1 = chirp(t, 40000-f_start-bandwidth, duration/2, 40000-f_start);
+    y2 = chirp(t, 40000-f_start, duration/2, 40000-f_start-bandwidth);
+elseif (id == 3)
+    y1 = chirp(t, 40000-f_start-bandwidth, duration/2, 40000-f_start);
+    y2 = chirp(t, 40000-f_start-bandwidth, duration/2, 40000-f_start);
 end
+signal = cat(2, y1(1:length(y1)-1), y2);
 
-%figure; spectrogram(signal, 1024, 512, 48000, 48000);
+% if f_start+bandwidth > 24000
+%     if f_start > 24000 && bandwidth == 0
+%         t = 0:1/48000:duration;
+%         signal = chirp(t, 40000-f_start, duration, 40000-f_start);
+%     elseif f_start >= 24000 && bandwidth > 0
+%         t = 0:1/48000:duration;
+%         signal = chirp(t, 40000-f_start, duration, 40000-f_start-bandwidth);
+%     elseif f_start < 24000 && bandwidth > 0
+%         t2 = 0:1/48000:duration*(f_start+bandwidth-24000)/bandwidth;
+%         signal2 = chirp(t2, 40000-24000, duration*(f_start+bandwidth-24000)/bandwidth, 40000-f_start-bandwidth);
+%         t1 = 0:1/48000:duration*(24000-f_start)/bandwidth;
+%         signal1 = chirp(t1, f_start, duration*(24000-f_start)/bandwidth, 24000);
+%         signal = cat(2, signal1, signal2);
+%     end 
+% else
+%     t = 0:1/48000:duration;
+%     signal = chirp(t, f_start, duration, f_start+bandwidth);
+% end
+
+figure; spectrogram(signal, 1024, 512, 48000, 48000);
 cc = xcorr(data,signal);
 figure; plot(cc);
 end
