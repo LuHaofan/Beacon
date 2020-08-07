@@ -14,8 +14,12 @@ function send_tone(repeatCount,duration,f_1,f_2,active_channel)
     y1 = chirp(t, f_1, duration, f_1);
     y2 = chirp(t, f_2, duration, f_2);
     y = y1+y2;
-    carr = 40000;
-    y_c = chirp(t,40000-carr,duration,40000-carr);
+    carr1 = 40000;
+    y_c1 = chirp(t,40000-carr1,duration,40000-carr1);
+%     carr2 = 39000;
+%     y_c2 = chirp(t,40000-carr2, duration, 40000-carr2);
+%     y_c = y_c1+y_c2;
+    y_c = y_c1;
     y = y./max(y);
     y_c = y_c./max(y_c);
     
@@ -94,8 +98,8 @@ function send_tone(repeatCount,duration,f_1,f_2,active_channel)
         y = repmat(y, repeatCount, 1);
     end
     timeOfPlay = size(y,1)/fs;
-    %figure; spectrogram(y(:,1), 1024, 512, fs, fs);
-    %figure; spectrogram(y(:,2), 1024, 512, fs, fs);
+    figure; spectrogram(y(:,1), 1024, 512, fs, fs);
+    figure; spectrogram(y(:,2), 1024, 512, fs, fs);
     sound(y, fs);
     disp('Playing BackDoor sound...');
     pause(timeOfPlay+1);
