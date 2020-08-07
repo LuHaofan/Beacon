@@ -1,12 +1,13 @@
 
 function code = decodeTone(data)
-    F1 = [697, 770, 852, 941];
-    F2 = [1209, 1336, 1477, 1633];
+    F1 = [3697, 3770, 3852, 3941];
+    F2 = [4209, 4336, 4477, 4633];
     Fs = 48000;
     N = length(data);
     zpad = 8*N;
     f_samples = -Fs/2:Fs/zpad:Fs/2;
     fft_data = abs(dft(data, zpad));
+    %figure;plot(f_samples, fft_data);
     ind_lower = [0 0 0 0];
     ind_higher = [0 0 0 0];
     for i = (1:4)
