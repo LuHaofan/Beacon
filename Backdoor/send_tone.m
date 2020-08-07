@@ -16,10 +16,10 @@ function send_tone(repeatCount,duration,f_1,f_2,active_channel)
     y = y1+y2;
     carr1 = 40000;
     y_c1 = chirp(t,40000-carr1,duration,40000-carr1);
-%     carr2 = 39000;
-%     y_c2 = chirp(t,40000-carr2, duration, 40000-carr2);
-%     y_c = y_c1+y_c2;
-    y_c = y_c1;
+    carr2 = 39000;
+    y_c2 = chirp(t,40000-carr2, duration, 40000-carr2);
+    y_c = y_c1+y_c2;
+    %y_c = y_c1;
     y = y./max(y);
     y_c = y_c./max(y_c);
     
