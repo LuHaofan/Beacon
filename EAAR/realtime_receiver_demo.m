@@ -8,7 +8,7 @@ recorder1 = audiorecorder(48000, 24, 1);
 t = tcpip('127.0.0.1',10086);
 
 % Open socket and wait before sending data
-fopen(t);
+%fopen(t);
 %fwrite(t,1);
 % bpFilt2 = designfilt('bandpassfir','FilterOrder',30, ...
 %          'CutoffFrequency1', 4000,'CutoffFrequency2',8000, ...
@@ -17,28 +17,21 @@ fopen(t);
 
 count = 0;
 while(1)
- recordblocking(recorder1,0.5);
- 
- data = getaudiodata(recorder1);
- data = filter(bpFilt2, data);
- %spectrogram(data,1024, 512, 48000, 48000);
-%  fft_data = abs(fft(data));
-%  rfft_data = fft_data(1:(floor(length(fft_data)/2)+1));
-%  cc = frequencyCC(4000, 3000, rfft_data, 0.2);
- cc = measureCC(33000, 2000, data, 0.2);
- [det m_cc] = detectSignal(cc);
- %plot(cc);
- %title(num2str(det));
- %det = decode(data, 1);
- if det == true
-     DataToSend = 1;
-     count = count + 1;
-     disp(DataToSend);
-     fwrite(t,DataToSend);
-%  else 
-%      DataToSend = 0;
-%      disp(DataToSend);
-%      fwrite(t,DataToSend);
+    recordblocking(recorder1,0.5);
+    data = getaudiodata(recorder1);
+    disp(char(decodeTone(data)));
+    %spectrogram(data, 1024, 512, 48000, 48000)
+%     n_samples = 10;
+%     slice = 1:length(data)/n_samples:length(data);
+%     codeVec = zeros(1, length(slice)-1);
+%     figure; spectrogram(data, 1024, 512, 48000, 48000)
+%     for i = 1:(length(slice)-1)
+%         codeVec(i) = decodeTone(data(slice(i):slice(i+1)));
+%     end
+%     for i = 1:length(codeVec)
+%         disp(char(codeVec(i)));
+%     end
+    pause(2);
  end
  %fft_data = abs(fft(data));
 %  beacon_1 = sum(fft_data(f_1*0.45:f_1*0.55))
@@ -57,7 +50,6 @@ while(1)
 %      fwrite(t,DataToSend);
 %  end
  
-end
 fclose(t);
 delete(t);
 end
