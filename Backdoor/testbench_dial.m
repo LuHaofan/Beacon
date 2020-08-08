@@ -1,12 +1,12 @@
 close all; clear; clc;
 
-dialNumber('A', 50);
+dialNumber('*', 50);
 % recObj = audiorecorder(48000, 24, 1);
 % disp('Start Recording');
 % record(recObj);
 % disp('Playing Backdoor signal');
 % 
-% dialNumber('A', 0.5);
+% dialNumber('D', 0.5);
 % pause(2);
 % disp('Stop Recording');
 % stop(recObj);
