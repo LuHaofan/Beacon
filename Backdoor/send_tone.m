@@ -98,8 +98,8 @@ function send_tone(repeatCount,duration,f_1,f_2,active_channel)
         y = repmat(y, repeatCount, 1);
     end
     timeOfPlay = size(y,1)/fs;
-    figure; spectrogram(y(:,1), 1024, 512, fs, fs);
-    figure; spectrogram(y(:,2), 1024, 512, fs, fs);
+    %figure; spectrogram(y(:,1), 1024, 512, fs, fs);
+    %figure; spectrogram(y(:,2), 1024, 512, fs, fs);
     sound(y, fs);
     disp('Playing BackDoor sound...');
     pause(timeOfPlay+1);
