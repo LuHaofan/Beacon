@@ -46,7 +46,9 @@ function code = decodeTone(data)
     if code_t == code_v
         code = code_t;
     else
+
         code = NaN;
+
     end
 end
 

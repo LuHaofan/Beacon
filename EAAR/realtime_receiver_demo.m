@@ -15,24 +15,26 @@ t = tcpip('127.0.0.1',10086);
 %          'SampleRate',48000);
 
 
-count = 0;
-while(1)
+count = 100;
+codeVec = [];
+while(count > 0)
+    
     recordblocking(recorder1,0.5);
     data = getaudiodata(recorder1);
-    disp(char(decodeTone(data)));
-    %spectrogram(data, 1024, 512, 48000, 48000)
-%     n_samples = 10;
-%     slice = 1:length(data)/n_samples:length(data);
-%     codeVec = zeros(1, length(slice)-1);
-%     figure; spectrogram(data, 1024, 512, 48000, 48000)
+    code = decodeTone(data);
+    disp(char(code));
+    codeVec = [codeVec; code];
+    %figure; spectrogram(data, 1024, 512, 48000, 48000)
 %     for i = 1:(length(slice)-1)
-%         codeVec(i) = decodeTone(data(slice(i):slice(i+1)));
+%         code = decodeTone(data(slice(i):slice(i+1)));
+%         disp(char(code));
+%         codeVec = [codeVec; code];
 %     end
-%     for i = 1:length(codeVec)
-%         disp(char(codeVec(i)));
-%     end
-    pause(2);
- end
+    count = count-1;
+    %pause(2);
+end
+disp(tabulate(codeVec));
+
  %fft_data = abs(fft(data));
 %  beacon_1 = sum(fft_data(f_1*0.45:f_1*0.55))
 %  beacon_2 = sum(fft_data(f_2*0.45:f_2*0.55))
