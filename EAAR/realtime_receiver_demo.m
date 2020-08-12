@@ -18,7 +18,8 @@ t = tcpip('127.0.0.1',10086);
 count = 100;
 codeVec = [];
 while(count > 0)
-    recordblocking(recorder1,0.3);
+    
+    recordblocking(recorder1,0.5);
     data = getaudiodata(recorder1);
     code = decodeTone(data);
     disp(char(code));
