@@ -1,7 +1,8 @@
-function snr = measureSNR(data)
+function snr = measureSNR(data,duration)
     %% Align the signal
-    t = 0:1/48000:0.2;
-    signal = chirp(t, 4000, 0.2, 1000);
+    %duration = 0.2;
+    t = 0:1/48000:duration;
+    signal = chirp(t, 4000, duration, 1000);
     corr = xcorr(data, signal);
     figure; plot(corr);
     % Compute SNR with cross-correlation
