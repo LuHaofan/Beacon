@@ -1,6 +1,6 @@
 
 function code = decodeTone(data)
-
+    dare_to_die = 20000;
     F1 = [2100, 2400, 2700, 3000];
     F2 = [4350, 4650, 4950, 5250];
 
@@ -8,20 +8,27 @@ function code = decodeTone(data)
     N = length(data);
     zpad = 8*N;
     f_samples = -Fs/2:Fs/zpad:Fs/2;
-    fft_data = abs(dft(data, zpad));
-    %figure;plot(f_samples, fft_data);
+    fft_data = abs(dft(data, length(f_samples)));
+    fft_data = fft_data./max(fft_data);
+    %figure;
+    plot(f_samples, fft_data);
     ind_lower = [0 0 0 0];
     ind_higher = [0 0 0 0];
     for i = (1:4)
         [tmp ind_lower(i)] = min(abs(f_samples-F1(i)));
         [tmp ind_higher(i)] = min(abs(f_samples-F2(i)));
     end
+    [tmp idx_dtd] = min(abs(f_samples-dare_to_die));
     amp_lo = [0 0 0 0];
     amp_hi = [0 0 0 0];
     for i = (1:4)
         amp_lo(i) = fft_data(ind_lower(i));
         amp_hi(i) = fft_data(ind_higher(i));
     end
+    amp_lo = [amp_lo fft_data(idx_dtd)];
+    amp_hi = [amp_hi fft_data(idx_dtd)];
+%     disp(amp_lo);
+%     disp(amp_hi);
     [tmp f1] = max(amp_lo);
     [tmp f2] = max(amp_hi);
     code_t = freq2num(f1,f2);
@@ -40,15 +47,17 @@ function code = decodeTone(data)
         amp_lo_v(i) = fft_data(ind_lo_v(i));
         amp_hi_v(i) = fft_data(ind_hi_v(i));
     end
+    amp_lo_v = [amp_lo_v fft_data(idx_dtd)];
+    amp_hi_v = [amp_hi_v fft_data(idx_dtd)];
+%     disp(amp_lo_v);
+%     disp(amp_hi_v);
     [tmp f1_v] = max(amp_lo_v);
     [tmp f2_v] = max(amp_hi_v);
     code_v = freq2num(f1_v,f2_v);
     if code_t == code_v
         code = code_t;
     else
-
-        code = NaN;
-
+        code = 'X';
     end
 end
 
@@ -87,8 +96,10 @@ function num = freq2num(f1, f2)
         num = 'B';
     elseif f1 == 3 && f2 == 4
         num = 'C';
-    else
+    elseif f1 == 4 && f2 == 4
         num = 'D';
+    else
+        num = 'x';
     end
 end
 
