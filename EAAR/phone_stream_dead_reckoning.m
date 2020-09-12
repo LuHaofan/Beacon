@@ -7,8 +7,10 @@ figure(2);
 ButtonHandle_2 = uicontrol('Style', 'PushButton', ...
     'String', 'Calibrate','Callback','delete(gcf)');
 
-anchor_list = [-3,4];
-calib_pt_list = [0,6];
+% anchor_list = [0,24; 9,12];
+% calib_pt_list = [9,0];
+anchor_list = [-2.16,16.6; -5,8.3];
+calib_pt_list = [0,8.3];
 
 t=tcpip('127.0.0.1', 10086,'NetworkRole','server');
 

@@ -10,8 +10,7 @@ function code = decodeTone(data)
     f_samples = -Fs/2:Fs/zpad:Fs/2;
     fft_data = abs(dft(data, length(f_samples)));
     fft_data = fft_data./max(fft_data);
-    %figure;
-    plot(f_samples, fft_data);
+    %figure;plot(f_samples, fft_data);
     ind_lower = [0 0 0 0];
     ind_higher = [0 0 0 0];
     for i = (1:4)
@@ -57,7 +56,7 @@ function code = decodeTone(data)
     if code_t == code_v
         code = code_t;
     else
-        code = nan;
+        code = 'x';
     end
 end
 
