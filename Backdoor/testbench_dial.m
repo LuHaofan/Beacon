@@ -1,7 +1,7 @@
 close all; clear; clc;
 
 
-dialNumber('7', 40);
+dialNumber('7', 300);
 
 % while(1)
 % recObj = audiorecorder(48000, 24, 1);

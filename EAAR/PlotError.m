@@ -15,9 +15,10 @@ truth_x = cat(1,truth_x_1,truth_x_2,truth_x_3,truth_x_4);
 truth_y = cat(1,truth_y_1,truth_y_2,truth_y_3,truth_y_4);
 truth_list = cat(2,truth_x,truth_y);
 figure;
+subplot(1,2,1)
 plot(truth_x,truth_y);
 hold on;
-plot(curser_list(1:110,1),curser_list(1:110,2), '-*');
+plot(curser_list(:,1),curser_list(:,2), '-*');
 hold on;
 scatter([0,-2.16,-5],[8.3,16.6,8.3],'k','^');
 xlim([-10,10]);
@@ -25,17 +26,17 @@ ylim([-1,25]);
 hold off;
 
 errVec = [];
-for i = (1:110)
+for i = (1:length(curser_list))
     errVec = [errVec, find_closest(curser_list(i,1),curser_list(i,2),truth_list)];
 end
-figure;
+subplot(1,2,2)
 plot(errVec);
 xlabel('step');
 ylabel('Error');
 function err = find_closest(x, y, truth_list)
-    err = 625;
+    err = 25;
     for i = 1:length(truth_list)
-        tmp = (x-truth_list(i,1))^2+(y-truth_list(i,2))^2;
+        tmp = sqrt((x-truth_list(i,1))^2+(y-truth_list(i,2))^2);
         if tmp < err
             err = tmp;
         end
